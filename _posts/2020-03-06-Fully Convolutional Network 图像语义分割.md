@@ -2,14 +2,14 @@
 layout: article
 title: Fully Convolutional Network 图像语义分割
 tag: Semantic Segmentation
-excerpt: I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.
+excerpt: 首次采用全卷积网络实现语义分割任务
 ---
 
 > Long J, Shelhamer E, Darrell T. Fully convolutional networks for semantic segmentation[C]
 >
 > Proceedings of the IEEE conference on computer vision and pattern recognition. 2015: 3431-3440.
 
-<!-- more -->
+
 
 # 贡献
 
