@@ -35,8 +35,8 @@ excerpt: 简单的RNN及LSTM
 ![](https://cdn.jsdelivr.net/gh/Mronne/MarkDownImg/img/20200202163035.png)
 
 ## 2.2 RNN LSTM
-- 先对输入`$x^t$`进行变换，得到四个不同的向量`$z^f,z^i,z,z^o$`，分别作为LSTM的四个输入
-- `$c^{t-1}$`代表控制cell的值
+- 先对输$x^t$ 进行变换，得到四个不同的向量$z^f,z^i,z,z^o$，分别作为LSTM的四个输入
+- $c^{t-1}$代表控制cell的值
 ![](https://cdn.jsdelivr.net/gh/Mronne/MarkDownImg/img/20200202184802.png)
 
 ![](https://cdn.jsdelivr.net/gh/Mronne/MarkDownImg/img/20200202185137.png)
