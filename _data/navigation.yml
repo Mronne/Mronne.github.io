@@ -1,12 +1,12 @@
 header:
-- titles:
+  - titles:
       # @start locale config
-      en      : &EN       About
+      en      : &EN       Home
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  About
+      zh-Hans : &ZH_HANS  Home
       zh      : *ZH_HANS
       zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
@@ -26,19 +26,19 @@ header:
     
   - titles:
       # @start locale config
-      en      : &EN       About
+      en      : &EN       Archive
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  About
+      zh-Hans : &ZH_HANS  Archive
       zh      : *ZH_HANS
       zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  關於
+      zh-Hant : &ZH_HANT  archive
       zh-TW   : *ZH_HANT
       zh-HK   : *ZH_HANT
-      ko      : &KO       소개
+      ko      : &KO       archive
       ko-KR   : *KO
       fr      : &FR       À propos
       fr-BE   : *FR
@@ -47,7 +47,7 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /about.html
+    url: /archive.html
 
   - titles:
       # @start locale config
