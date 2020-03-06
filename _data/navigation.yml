@@ -4,7 +4,7 @@ header:
       en      : &EN       Home
       zh-Hans : &ZH_HANS  Home
       zh      : *ZH_HANS
-      zh-CN   : *EN
+      zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
       # @end locale config
     url: /archive.html
@@ -16,9 +16,9 @@ header:
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  归档
+      zh-Hans : &ZH_HANS Archive
       zh      : *ZH_HANS
-      zh-CN   : *EN
+      zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
       zh-Hant : &ZH_HANT  歸檔
       zh-TW   : *ZH_HANT
@@ -41,9 +41,9 @@ header:
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  关于
+      zh-Hans : &ZH_HANS  About
       zh      : *ZH_HANS
-      zh-CN   : *EN
+      zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
       zh-Hant : &ZH_HANT  關於
       zh-TW   : *ZH_HANT
