@@ -1,4 +1,14 @@
 header:
+- titles:
+      # @start locale config
+      en      : &EN       Home
+      zh-Hans : &ZH_HANS  Home
+      zh      : *ZH_HANS
+      zh-CN   : *EN
+      zh-SG   : *ZH_HANS
+      # @end locale config
+    url: /archive.html
+    
   - titles:
       # @start locale config
       en      : &EN       Archive
@@ -8,7 +18,7 @@ header:
       en-AU   : *EN
       zh-Hans : &ZH_HANS  归档
       zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
+      zh-CN   : *EN
       zh-SG   : *ZH_HANS
       zh-Hant : &ZH_HANT  歸檔
       zh-TW   : *ZH_HANT
@@ -33,7 +43,7 @@ header:
       en-AU   : *EN
       zh-Hans : &ZH_HANS  关于
       zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
+      zh-CN   : *EN
       zh-SG   : *ZH_HANS
       zh-Hant : &ZH_HANT  關於
       zh-TW   : *ZH_HANT
