@@ -4,7 +4,7 @@ title: Fully Convolutional Network 图像语义分割
 tag: Semantic Segmentation
 article_header:
   type: overlay
-  theme:dark
+  theme: dark
   background_color: '#123'
   background_image: flase
 ---
