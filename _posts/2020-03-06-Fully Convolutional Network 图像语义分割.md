@@ -7,6 +7,7 @@ tag: Semantic Segmentation
 > Long J, Shelhamer E, Darrell T. Fully convolutional networks for semantic segmentation[C]
 >
 > Proceedings of the IEEE conference on computer vision and pattern recognition. 2015: 3431-3440.
+<!-- more -->
 
 # 贡献
 
