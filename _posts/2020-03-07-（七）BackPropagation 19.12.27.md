@@ -1,3 +1,9 @@
+---
+layout: article
+title: （七）反向传播算法
+tag: [机器学习课程,反向传播,deep learning]
+excerpt: 介绍机器学习中的反向传播求解梯度
+---
 # 计算梯度
 有效计算神经网络中的梯度值
 

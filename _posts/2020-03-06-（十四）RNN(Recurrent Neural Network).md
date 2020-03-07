@@ -1,7 +1,7 @@
 ---
 layout: article
 title: （十四）RNN(Recurrent Neural Network)
-tag: [机器学习课程，RNN，deep learning]
+tag: [机器学习课程,RNN,deep learning]
 excerpt: 简单的RNN及LSTM
 ---
 >RNN主要是对序列进行记忆化处理

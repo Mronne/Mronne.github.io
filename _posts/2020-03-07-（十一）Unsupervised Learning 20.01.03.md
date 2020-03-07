@@ -1,7 +1,7 @@
 ---
 layout: article
 title: （十一）无监督学习
-tag: [机器学习课程，无监督学习，deep learning]
+tag: [机器学习课程,无监督学习,deep learning]
 excerpt: 介绍无监督学习的基本情况
 ---
 [toc]

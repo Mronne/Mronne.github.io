@@ -1,3 +1,9 @@
+---
+layout: article
+title: （十一）SVM(Support Vector Machine)
+tag: [机器学习课程,SVM,deep learning]
+excerpt: SVM相关方法
+---
 Hinge Loss
 Kernal
 

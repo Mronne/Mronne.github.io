@@ -1,7 +1,7 @@
 ---
 layout: article
 title: （五）逻辑回归 Logistic Regression
-tag: [机器学习课程，Logistic Regression，deep learning]
+tag: [机器学习课程,Logistic Regression,deep learning]
 excerpt: 逻辑回归模型
 ---
 # 1.Function Set

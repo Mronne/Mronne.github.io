@@ -1,3 +1,9 @@
+---
+layout: article
+title: （十）半监督学习
+tag: [机器学习课程,半监督学习,deep learning]
+excerpt: 半监督学习的相关算法
+---
 [toc]
 # 1.生成式模型(Generative Model)的半监督学习
 ## 1.1 算法
@@ -5,28 +11,28 @@
 - Step 1:对每一笔未加标签的数据计算先验概率
 `$P_{\theta}(C_1 |x^u)$`
 - Step 2:更新模型
-```math
+$$
 P(C_1)=\frac{N_1+\Sigma_{x^u}P(C_1|x^u)}{N}\\[0.4em]
 \mu^1=\frac{1}{N_1}\sum_{x^r\in C_1}x^r+\frac{1}{\Sigma_{x^u}P(C_1|x^u)}\sum_{x^u}P(C_1|x^u)x^u
-```
+$$
 其中
-```math
+$$
 N:数据的总个数\\[0.4em]
 N_1:属于类别1的加标签数据个数\\[0.4em]
 x^\mu:未加标签的数据个数
-```
+$$
 循环进行，模型逐渐更新。理论上算法最终可以收敛，但结果会受到初值的影响。
 
 ## 1.2 算法原理
 上述算法实际是最大化有标签和无标签数据的似然函数。
-```math
+$$
 logL(\theta)=\sum_{x^r}log P_{\theta}(x^r,\hat{y}^r)+\sum_{x^u}log P_{\theta}(x^u) \tag{1}
-```
+$$
 
-```math
+$$
 P_{\theta}(x^r,\hat{y}^r)=P_{\theta}(x^r|\hat{y}^r)P_{\theta}(\hat{y}^r)\\[0.6em]
 P_{\theta}(x^u)=P_{\theta}(x^u|C_1)P(C_1)+P_{\theta}(x^u|C_2)P(C_2)
-```
+$$
 其中（1）式是一个非凸的函数，需要进行迭代求解。1.1节中的算法实际是在迭代求解（1）式，不断迭代使似然函数最大化。
 
 # 2.Low-density Separation 非黑即白
@@ -41,13 +47,13 @@ P_{\theta}(x^u)=P_{\theta}(x^u|C_1)P(C_1)+P_{\theta}(x^u|C_2)P(C_2)
 
 ## 2.2 Entropy-based Regularization
 - `$y^u$`的熵：评价`$y^u$`的分布有多集中
-```math
+$$
 E(y^u) = -\sum_{m=1}^5y_m^u ln(y_m^u)
-```
+$$
 - 目标函数
-```math
+$$
 L=\sum_{x^r}C(y^r,\hat{y}^r)+\lambda\sum_{x^u}E(y^u)
-```
+$$
 
 ## 2.3 Semi-supervised SVM
 - 穷举未加标签数据的可能的标签，然后分别使用SVM进行分类
@@ -72,29 +78,29 @@ L=\sum_{x^r}C(y^r,\hat{y}^r)+\lambda\sum_{x^u}E(y^u)
 ### 3.3.2 构建图 Graph Comstruction
 - 定义两个样本`$x^i$`和`$x^j$`之间的相似度函数`$s(x^i,x^j)$`
     - Gaussian Radial Basis Function
-```math
+$$
 s(x^i,x^j)=exp(-\gamma\|x^i-x^j\|^2)
-```
-- 添加edge 
+$$
+- 添加edge
     - K近邻
-    - e-Neighborhood 
+    - e-Neighborhood
 - 为每条边分配权重
 
 ### 3.3.3 平滑度评价 smoothness
 - 定义图上标签点的平滑度(smoothness)
-```math
+$$
 S=\frac{1}{2}\sum_{i,j}w_{i,j}(y^i-y^j)^2
-```
+$$
 - 对每个点进行上述计算，其中`$y^j$`是它相连的所有点,其中smoothness 函数也可表示为
- 
+
 
 ![image](http://m.qpic.cn/psc?/V10GdCbE4Hg3EY/Kl*GVNe9OdIAJBN6RDL7pCZ58JpfdtT96noCWod8fOXJMAOkL73uLdGQ.SYoSpCS4msCLX3278TFpOK6WvJX09IfQELWLFlwAoSnlWjfxvc!/b&bo=igXGAgAAAAADB2k!&rf=viewer_4)
 
 - smoothness中的`$\bold{y}$`依赖于网络参数
 - 网络的损失函数定义为
-```math
+$$
 L=\sum_{x^r}C(y^r,\hat{y}^r)+\lambda S
-```
+$$
 
 # 4.Better Representation
 - 寻找在现象背后的潜在因素

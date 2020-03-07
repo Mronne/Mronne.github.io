@@ -1,7 +1,7 @@
 ---
 layout: article
 title: （四）分类 Classification
-tag: [机器学习课程，deep learning]
+tag: [机器学习课程,deep learning]
 excerpt: 机器学习中的分类任务
 ---
 ![image](http://m.qpic.cn/psc?/V10GdCbE4Hg3EY/Kl*GVNe9OdIAJBN6RDL7pIvVF0iz6nfinBUXtEYXAw2gYiNRETN.jNP.tlHsHtRrlLkb5hinX4NlQ573ZxlbcxDlajTYvxW2FktKRFnYFEw!/b&bo=kwWHAwAAAAADBzA!&rf=viewer_4)
