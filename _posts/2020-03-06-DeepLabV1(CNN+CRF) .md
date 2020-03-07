@@ -1,7 +1,7 @@
 ---
 layout: article
-title: DeepLabV1（CNN+CRF）语义分割
-tag: [Semantic Segmentation,,DeepLab,Deep Learning]
+title: DeepLabV1（CNN+CRF）
+tag: [Semantic Segmentation,DeepLab,Deep Learning]
 excerpt: 先通过CNN进行预测，将预测结果通过全连接CRF进一步提高精细度。
 ---
 
