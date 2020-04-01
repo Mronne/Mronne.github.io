@@ -1,7 +1,7 @@
 ---
 layout: article
 title: C++ primer plus（二）简单数据类型
-tag: [Cpp,Cpp primer plus]
+tag: [C++,C++ primer plus]
 excerpt: C++ primer plus 中的简单数据类型
 ---
 

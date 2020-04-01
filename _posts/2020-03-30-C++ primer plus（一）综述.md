@@ -1,7 +1,7 @@
 ---
 layout: article
 title: C++ primer plus（一）综述
-tag: [Cpp,Cpp primer plus]
+tag: [C++,C++ primer plus]
 excerpt: C++ primer plus 读后感
 ---
 
